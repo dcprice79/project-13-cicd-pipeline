@@ -1,19 +1,11 @@
 version: 0.2
 
 phases:
-  install:
-    commands:
-      - echo Installing dependencies
   build:
     commands:
-      - echo Build started on `date`
-      - echo Copying files
-  post_build:
-    commands:
-      - echo Build completed on `date`
+      - echo "Build complete"
 
 artifacts:
   files:
-    - index.html
-    - appspec.yml
-  discard-paths: yes
+    - '**/*'
+  discard-paths: no
